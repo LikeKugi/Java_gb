@@ -9,7 +9,7 @@ public class ex4 {
     /**
      * К калькулятору из предыдущего дз добавить логирование.
      */
-    private static Logger logger = Logger.getLogger(ex2.class.getName());
+    private static Logger logger = Logger.getLogger(ex4.class.getName());
 
     public static void main(String[] args) {
         calculateString();
@@ -43,6 +43,7 @@ public class ex4 {
         }
         try(PrintWriter out = new PrintWriter("calc.txt")) {
             out.println(result);
+            logger.info("logging successes");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
