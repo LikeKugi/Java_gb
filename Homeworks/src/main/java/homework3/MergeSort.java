@@ -3,6 +3,9 @@ package homework3;
 import java.util.Arrays;
 
 public class MergeSort {
+    /**
+     * Реализовать алгоритм сортировки слиянием
+     */
     public static void main(String[] args) {
         int[] a = {11, 30, 24, 7, 31, 16, 39, 41};
         int n = a.length;
