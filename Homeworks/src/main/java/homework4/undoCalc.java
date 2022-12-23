@@ -8,9 +8,11 @@ public class undoCalc {
     public static void main(String[] args) {
 
         LinkedList<Integer> operations = new LinkedList<>();
+        for (int i = 0; i < 3; i++) {
+            System.out.println("calculator");
+            calculateString(operations);
+        }
 
-        System.out.println("calculator");
-        calculateString(operations);
 
     }
     private static void calculateString(LinkedList<Integer> operations) {
